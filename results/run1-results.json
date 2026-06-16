@@ -1,0 +1,10 @@
+{
+  "run_id": "run1",
+  "timestamp": "2026-06-16T12:00:00Z",
+  "model": "test-model",
+  "results": {
+    "accuracy": 0.95,
+    "precision": 0.92,
+    "recall": 0.88
+  }
+}
