@@ -1,0 +1,13 @@
+{
+  "created_at_utc": "2026-06-17T12:06:18.246240+00:00",
+  "filename": "collated-20260617-120618-e69807b8.json",
+  "placeholder_data": {
+    "pipeline": "github-upload-demo",
+    "sample_metrics": {
+      "count": 42,
+      "score": 0.95
+    },
+    "status": "success"
+  },
+  "uuid": "e69807b8"
+}
