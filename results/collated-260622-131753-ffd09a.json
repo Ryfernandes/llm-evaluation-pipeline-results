@@ -1,0 +1,111 @@
+{
+  "baseline_results": [
+    {
+      "task_name": "gsm8k_platinum_cot_llama",
+      "model_name": "Qwen/Qwen3-8B",
+      "model_type": "baseline",
+      "inference_parameters": {
+        "do_sample": true,
+        "temperature": 0.6,
+        "top_p": 0.9,
+        "top_k": 50,
+        "max_gen_toks": 4096,
+        "seed": 1234
+      },
+      "num_repetitions": 1,
+      "aggregate_stats": {
+        "evaluation_duration_seconds": {
+          "mean": 124.42616966506466,
+          "std": 0.0
+        },
+        "metrics": {
+          "exact_match,strict-match": {
+            "value": {
+              "mean": 0.9602977667493796,
+              "std": 0.0
+            },
+            "stderr": {
+              "mean": null,
+              "std": 0.0
+            }
+          }
+        }
+      },
+      "runs": [
+        {
+          "source_filename": "gsm8k_platinum_cot_llama_seed_1234.json",
+          "evaluation_datetime": 1782134524.4594588,
+          "evaluation_datetime_iso": "2026-06-22T13:22:04.459459+00:00",
+          "evaluation_duration_seconds": 124.42616966506466,
+          "metrics": {
+            "exact_match,strict-match": {
+              "value": 0.9602977667493796,
+              "stderr": null
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "compressed_results": [
+    {
+      "task_name": "gsm8k_platinum_cot_llama",
+      "model_name": "Qwen/Qwen3-8B",
+      "model_type": "compressed",
+      "inference_parameters": {
+        "do_sample": true,
+        "temperature": 0.6,
+        "top_p": 0.9,
+        "top_k": 50,
+        "max_gen_toks": 4096,
+        "seed": 1234
+      },
+      "num_repetitions": 1,
+      "aggregate_stats": {
+        "evaluation_duration_seconds": {
+          "mean": 131.27720758505166,
+          "std": 0.0
+        },
+        "metrics": {
+          "exact_match,strict-match": {
+            "value": {
+              "mean": 0.9528535980148883,
+              "std": 0.0
+            },
+            "stderr": {
+              "mean": null,
+              "std": 0.0
+            }
+          }
+        }
+      },
+      "runs": [
+        {
+          "source_filename": "gsm8k_platinum_cot_llama_seed_1234.json",
+          "evaluation_datetime": 1782135004.812789,
+          "evaluation_datetime_iso": "2026-06-22T13:30:04.812789+00:00",
+          "evaluation_duration_seconds": 131.27720758505166,
+          "metrics": {
+            "exact_match,strict-match": {
+              "value": 0.9528535980148883,
+              "stderr": null
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "parser_version": "1.0",
+    "parse_datetime": "2026-06-22T13:33:16.761458+00:00",
+    "session_id": "260622-131753-ffd09a",
+    "total_results_parsed": 2,
+    "total_files_parsed": 2,
+    "unique_tasks": [
+      "gsm8k_platinum_cot_llama"
+    ],
+    "unique_models": [
+      "Qwen/Qwen3-8B"
+    ]
+  }
+}
