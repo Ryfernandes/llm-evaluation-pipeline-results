@@ -1,0 +1,204 @@
+{
+  "baseline_results": [
+    {
+      "task_name": "gsm8k_platinum_cot_llama",
+      "model_name": "Qwen/Qwen3-8B",
+      "model_type": "baseline",
+      "inference_parameters": {
+        "do_sample": true,
+        "temperature": 0.6,
+        "top_p": 0.9,
+        "top_k": 50,
+        "max_gen_toks": 4096,
+        "seed": 1234
+      },
+      "num_repetitions": 1,
+      "aggregate_stats": {
+        "evaluation_duration_seconds": {
+          "mean": 121.22603237908334,
+          "std": 0.0
+        },
+        "metrics": {
+          "exact_match,strict-match": {
+            "value": {
+              "mean": 0.9602977667493796,
+              "std": 0.0
+            },
+            "stderr": {
+              "mean": null,
+              "std": 0.0
+            }
+          }
+        }
+      },
+      "runs": [
+        {
+          "source_filename": "gsm8k_platinum_cot_llama_seed_1234.json",
+          "evaluation_datetime": 1782136005.6899164,
+          "evaluation_datetime_iso": "2026-06-22T13:46:45.689916+00:00",
+          "evaluation_duration_seconds": 121.22603237908334,
+          "metrics": {
+            "exact_match,strict-match": {
+              "value": 0.9602977667493796,
+              "stderr": null
+            }
+          }
+        }
+      ]
+    },
+    {
+      "task_name": "mmlu_cot_llama",
+      "model_name": "Qwen/Qwen3-8B",
+      "model_type": "baseline",
+      "inference_parameters": {
+        "do_sample": true,
+        "temperature": 0.6,
+        "top_p": 0.9,
+        "top_k": 50,
+        "max_gen_toks": 4096,
+        "seed": 1234
+      },
+      "num_repetitions": 1,
+      "aggregate_stats": {
+        "evaluation_duration_seconds": {
+          "mean": 1614.552022937918,
+          "std": 0.0
+        },
+        "metrics": {
+          "exact_match,strict_match": {
+            "value": {
+              "mean": 0.8115653040877367,
+              "std": 0.0
+            },
+            "stderr": {
+              "mean": null,
+              "std": 0.0
+            }
+          }
+        }
+      },
+      "runs": [
+        {
+          "source_filename": "mmlu_cot_llama_seed_1234.json",
+          "evaluation_datetime": 1782136128.6303794,
+          "evaluation_datetime_iso": "2026-06-22T13:48:48.630379+00:00",
+          "evaluation_duration_seconds": 1614.552022937918,
+          "metrics": {
+            "exact_match,strict_match": {
+              "value": 0.8115653040877367,
+              "stderr": null
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "compressed_results": [
+    {
+      "task_name": "gsm8k_platinum_cot_llama",
+      "model_name": "Qwen/Qwen3-8B",
+      "model_type": "compressed",
+      "inference_parameters": {
+        "do_sample": true,
+        "temperature": 0.6,
+        "top_p": 0.9,
+        "top_k": 50,
+        "max_gen_toks": 4096,
+        "seed": 1234
+      },
+      "num_repetitions": 1,
+      "aggregate_stats": {
+        "evaluation_duration_seconds": {
+          "mean": 129.84676623577252,
+          "std": 0.0
+        },
+        "metrics": {
+          "exact_match,strict-match": {
+            "value": {
+              "mean": 0.9619520264681555,
+              "std": 0.0
+            },
+            "stderr": {
+              "mean": null,
+              "std": 0.0
+            }
+          }
+        }
+      },
+      "runs": [
+        {
+          "source_filename": "gsm8k_platinum_cot_llama_seed_1234.json",
+          "evaluation_datetime": 1782137814.2899575,
+          "evaluation_datetime_iso": "2026-06-22T14:16:54.289958+00:00",
+          "evaluation_duration_seconds": 129.84676623577252,
+          "metrics": {
+            "exact_match,strict-match": {
+              "value": 0.9619520264681555,
+              "stderr": null
+            }
+          }
+        }
+      ]
+    },
+    {
+      "task_name": "mmlu_cot_llama",
+      "model_name": "Qwen/Qwen3-8B",
+      "model_type": "compressed",
+      "inference_parameters": {
+        "do_sample": true,
+        "temperature": 0.6,
+        "top_p": 0.9,
+        "top_k": 50,
+        "max_gen_toks": 4096,
+        "seed": 1234
+      },
+      "num_repetitions": 1,
+      "aggregate_stats": {
+        "evaluation_duration_seconds": {
+          "mean": 1549.4733963119797,
+          "std": 0.0
+        },
+        "metrics": {
+          "exact_match,strict_match": {
+            "value": {
+              "mean": 0.7867825096140151,
+              "std": 0.0
+            },
+            "stderr": {
+              "mean": null,
+              "std": 0.0
+            }
+          }
+        }
+      },
+      "runs": [
+        {
+          "source_filename": "mmlu_cot_llama_seed_1234.json",
+          "evaluation_datetime": 1782137946.75123,
+          "evaluation_datetime_iso": "2026-06-22T14:19:06.751230+00:00",
+          "evaluation_duration_seconds": 1549.4733963119797,
+          "metrics": {
+            "exact_match,strict_match": {
+              "value": 0.7867825096140151,
+              "stderr": null
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "parser_version": "1.0",
+    "parse_datetime": "2026-06-22T18:07:53.998168+00:00",
+    "session_id": "260622-134125-a6efd4",
+    "total_results_parsed": 4,
+    "total_files_parsed": 4,
+    "unique_tasks": [
+      "gsm8k_platinum_cot_llama",
+      "mmlu_cot_llama"
+    ],
+    "unique_models": [
+      "Qwen/Qwen3-8B"
+    ]
+  }
+}
