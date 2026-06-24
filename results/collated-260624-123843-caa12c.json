@@ -1,0 +1,302 @@
+{
+  "baseline_results": [
+    {
+      "task_name": "gsm8k_platinum_cot_llama",
+      "model_name": "Qwen/Qwen3-8B",
+      "model_type": "baseline",
+      "inference_parameters": {
+        "do_sample": true,
+        "temperature": 0.6,
+        "top_p": 0.9,
+        "top_k": 50,
+        "max_gen_toks": 8192,
+        "seed": 1234
+      },
+      "num_repetitions": 3,
+      "aggregate_stats": {
+        "evaluation_duration_seconds": {
+          "mean": 148.72164241503924,
+          "std": 15.55354942173525
+        },
+        "metrics": {
+          "exact_match,strict-match": {
+            "value": {
+              "mean": 0.9630548662806727,
+              "std": 0.0026588504993088078
+            },
+            "stderr": {
+              "mean": null,
+              "std": 0.0
+            }
+          }
+        }
+      },
+      "runs": [
+        {
+          "source_filename": "gsm8k_platinum_cot_llama_seed_1234.json",
+          "evaluation_datetime": 1782304992.853548,
+          "evaluation_datetime_iso": "2026-06-24T12:43:12.853548+00:00",
+          "evaluation_duration_seconds": 158.82280291989446,
+          "metrics": {
+            "exact_match,strict-match": {
+              "value": 0.9619520264681555,
+              "stderr": null
+            }
+          }
+        },
+        {
+          "source_filename": "gsm8k_platinum_cot_llama_seed_1235.json",
+          "evaluation_datetime": 1782305153.318251,
+          "evaluation_datetime_iso": "2026-06-24T12:45:53.318251+00:00",
+          "evaluation_duration_seconds": 156.53138163592666,
+          "metrics": {
+            "exact_match,strict-match": {
+              "value": 0.9660876757650951,
+              "stderr": null
+            }
+          }
+        },
+        {
+          "source_filename": "gsm8k_platinum_cot_llama_seed_1236.json",
+          "evaluation_datetime": 1782305311.7159588,
+          "evaluation_datetime_iso": "2026-06-24T12:48:31.715959+00:00",
+          "evaluation_duration_seconds": 130.8107426892966,
+          "metrics": {
+            "exact_match,strict-match": {
+              "value": 0.9611248966087675,
+              "stderr": null
+            }
+          }
+        }
+      ]
+    },
+    {
+      "task_name": "mmlu_cot_llama",
+      "model_name": "Qwen/Qwen3-8B",
+      "model_type": "baseline",
+      "inference_parameters": {
+        "do_sample": true,
+        "temperature": 0.6,
+        "top_p": 0.9,
+        "top_k": 50,
+        "max_gen_toks": 8192,
+        "seed": 1234
+      },
+      "num_repetitions": 3,
+      "aggregate_stats": {
+        "evaluation_duration_seconds": {
+          "mean": 1763.1660161879845,
+          "std": 21.189868014106526
+        },
+        "metrics": {
+          "exact_match,strict_match": {
+            "value": {
+              "mean": 0.8183781987371219,
+              "std": 0.0003922212325371503
+            },
+            "stderr": {
+              "mean": null,
+              "std": 0.0
+            }
+          }
+        }
+      },
+      "runs": [
+        {
+          "source_filename": "mmlu_cot_llama_seed_1234.json",
+          "evaluation_datetime": 1782305444.3966992,
+          "evaluation_datetime_iso": "2026-06-24T12:50:44.396699+00:00",
+          "evaluation_duration_seconds": 1784.7747723669745,
+          "metrics": {
+            "exact_match,strict_match": {
+              "value": 0.818758011679248,
+              "stderr": null
+            }
+          }
+        },
+        {
+          "source_filename": "mmlu_cot_llama_seed_1235.json",
+          "evaluation_datetime": 1782307231.4588816,
+          "evaluation_datetime_iso": "2026-06-24T13:20:31.458882+00:00",
+          "evaluation_duration_seconds": 1762.3017964852042,
+          "metrics": {
+            "exact_match,strict_match": {
+              "value": 0.817974647486113,
+              "stderr": null
+            }
+          }
+        },
+        {
+          "source_filename": "mmlu_cot_llama_seed_1236.json",
+          "evaluation_datetime": 1782308996.0640366,
+          "evaluation_datetime_iso": "2026-06-24T13:49:56.064037+00:00",
+          "evaluation_duration_seconds": 1742.4214797117747,
+          "metrics": {
+            "exact_match,strict_match": {
+              "value": 0.8184019370460048,
+              "stderr": null
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "compressed_results": [
+    {
+      "task_name": "gsm8k_platinum_cot_llama",
+      "model_name": "Qwen/Qwen3-8B",
+      "model_type": "compressed",
+      "inference_parameters": {
+        "do_sample": true,
+        "temperature": 0.6,
+        "top_p": 0.9,
+        "top_k": 50,
+        "max_gen_toks": 8192,
+        "seed": 1234
+      },
+      "num_repetitions": 3,
+      "aggregate_stats": {
+        "evaluation_duration_seconds": {
+          "mean": 150.2540287662608,
+          "std": 3.788006273713134
+        },
+        "metrics": {
+          "exact_match,strict-match": {
+            "value": {
+              "mean": 0.9627791563275434,
+              "std": 0.004376759819792582
+            },
+            "stderr": {
+              "mean": null,
+              "std": 0.0
+            }
+          }
+        }
+      },
+      "runs": [
+        {
+          "source_filename": "gsm8k_platinum_cot_llama_seed_1234.json",
+          "evaluation_datetime": 1782305108.0490234,
+          "evaluation_datetime_iso": "2026-06-24T12:45:08.049023+00:00",
+          "evaluation_duration_seconds": 153.92176138982177,
+          "metrics": {
+            "exact_match,strict-match": {
+              "value": 0.967741935483871,
+              "stderr": null
+            }
+          }
+        },
+        {
+          "source_filename": "gsm8k_platinum_cot_llama_seed_1235.json",
+          "evaluation_datetime": 1782305263.7621224,
+          "evaluation_datetime_iso": "2026-06-24T12:47:43.762122+00:00",
+          "evaluation_duration_seconds": 150.4840894350782,
+          "metrics": {
+            "exact_match,strict-match": {
+              "value": 0.9611248966087675,
+              "stderr": null
+            }
+          }
+        },
+        {
+          "source_filename": "gsm8k_platinum_cot_llama_seed_1236.json",
+          "evaluation_datetime": 1782305416.125558,
+          "evaluation_datetime_iso": "2026-06-24T12:50:16.125558+00:00",
+          "evaluation_duration_seconds": 146.3562354738824,
+          "metrics": {
+            "exact_match,strict-match": {
+              "value": 0.9594706368899917,
+              "stderr": null
+            }
+          }
+        }
+      ]
+    },
+    {
+      "task_name": "mmlu_cot_llama",
+      "model_name": "Qwen/Qwen3-8B",
+      "model_type": "compressed",
+      "inference_parameters": {
+        "do_sample": true,
+        "temperature": 0.6,
+        "top_p": 0.9,
+        "top_k": 50,
+        "max_gen_toks": 8192,
+        "seed": 1234
+      },
+      "num_repetitions": 3,
+      "aggregate_stats": {
+        "evaluation_duration_seconds": {
+          "mean": 1767.646299957453,
+          "std": 13.097440619581917
+        },
+        "metrics": {
+          "exact_match,strict_match": {
+            "value": {
+              "mean": 0.7939752172055262,
+              "std": 0.0008212905992501849
+            },
+            "stderr": {
+              "mean": null,
+              "std": 0.0
+            }
+          }
+        }
+      },
+      "runs": [
+        {
+          "source_filename": "mmlu_cot_llama_seed_1234.json",
+          "evaluation_datetime": 1782305564.3087308,
+          "evaluation_datetime_iso": "2026-06-24T12:52:44.308731+00:00",
+          "evaluation_duration_seconds": 1756.1377133522183,
+          "metrics": {
+            "exact_match,strict_match": {
+              "value": 0.7942600769121207,
+              "stderr": null
+            }
+          }
+        },
+        {
+          "source_filename": "mmlu_cot_llama_seed_1235.json",
+          "evaluation_datetime": 1782307322.7039187,
+          "evaluation_datetime_iso": "2026-06-24T13:22:02.703919+00:00",
+          "evaluation_duration_seconds": 1781.8980797440745,
+          "metrics": {
+            "exact_match,strict_match": {
+              "value": 0.7946161515453639,
+              "stderr": null
+            }
+          }
+        },
+        {
+          "source_filename": "mmlu_cot_llama_seed_1236.json",
+          "evaluation_datetime": 1782309106.8586726,
+          "evaluation_datetime_iso": "2026-06-24T13:51:46.858673+00:00",
+          "evaluation_duration_seconds": 1764.9031067760661,
+          "metrics": {
+            "exact_match,strict_match": {
+              "value": 0.7930494231590941,
+              "stderr": null
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "parser_version": "1.0",
+    "parse_datetime": "2026-06-24T14:22:24.555040+00:00",
+    "session_id": "260624-123843-caa12c",
+    "model_id": "Qwen/Qwen3-8B",
+    "compression_recipe": "\n        quant_stage:\n            quant_modifiers:\n                QuantizationModifier:\n                    ignore: [\"lm_head\"]\n                    targets: [\"Linear\"]\n                    scheme: \"W4A16\"\n        ",
+    "total_results_parsed": 12,
+    "total_files_parsed": 12,
+    "unique_tasks": [
+      "gsm8k_platinum_cot_llama",
+      "mmlu_cot_llama"
+    ],
+    "unique_models": [
+      "Qwen/Qwen3-8B"
+    ]
+  }
+}
