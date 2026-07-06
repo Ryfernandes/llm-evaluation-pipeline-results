@@ -1,0 +1,25 @@
+{
+  "server": {
+    "vllm_version": "0.24.0",
+    "model_size": 15.27,
+    "model_load_time": 4.854645,
+    "kv_cache_size": 56.38,
+    "kv_cache_tokens": 410560,
+    "recommended_concurrency": 12.83,
+    "max_model_len": 32000
+  },
+  "results": [],
+  "metadata": {
+    "parser_version": "1.0",
+    "parse_datetime": "2026-07-06T16:21:22.458154+00:00",
+    "session_id": "070620261207",
+    "model_id": "Qwen/Qwen3-8B",
+    "total_results_parsed": 0,
+    "total_files_parsed": 1,
+    "unique_tasks": [],
+    "unique_models": [],
+    "proxy_logs_parsed": true,
+    "vllm_metrics_parsed": true,
+    "log_statistics_parsed": true
+  }
+}
