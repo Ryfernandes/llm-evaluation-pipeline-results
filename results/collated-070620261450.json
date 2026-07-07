@@ -1,0 +1,2211 @@
+{
+  "server": {
+    "vllm_version": "0.24.0",
+    "model_size": 15.27,
+    "model_load_time": 4.575172,
+    "kv_cache_size": 56.38,
+    "kv_cache_tokens": 410560,
+    "recommended_concurrency": 12.83,
+    "max_model_len": 32000
+  },
+  "results": [
+    {
+      "task_name": "gsm8k_platinum_cot_llama",
+      "model_name": "Qwen/Qwen3-8B",
+      "harness": "lm_eval[api,ifeval,multilingual] @ git+https://github.com/neuralmagic/lm-evaluation-harness.git@main",
+      "harness_version": "0.4.13.dev0",
+      "inference_parameters": {
+        "do_sample": true,
+        "temperature": 0.8,
+        "top_p": 0.95,
+        "top_k": 50,
+        "max_gen_toks": 8192,
+        "seed": 1235,
+        "concurrency": 512,
+        "limit": null
+      },
+      "num_repetitions": 3,
+      "aggregate_stats": {
+        "evaluation_duration_seconds": {
+          "mean": 124.9434950206584,
+          "std": 7.428103257393134
+        },
+        "metrics": {
+          "exact_match,strict-match": {
+            "value": {
+              "mean": 0.9627791563275434,
+              "std": 0.0008271298593879317
+            },
+            "stderr": {
+              "mean": null,
+              "std": 0.0
+            }
+          }
+        }
+      },
+      "runs": [
+        {
+          "source_filename": "gsm8k_platinum_cot_llama_seed_1235.json",
+          "evaluation_datetime": 1783364237.9112194,
+          "evaluation_datetime_iso": "2026-07-06T18:57:17.911219+00:00",
+          "evaluation_duration_seconds": 131.78793698304798,
+          "metrics": {
+            "exact_match,strict-match": {
+              "value": 0.9619520264681555,
+              "stderr": null
+            }
+          },
+          "proxy_statistics": {
+            "prompt_tokens": {
+              "min": 722,
+              "max": 887,
+              "mean": 759.6385442514475,
+              "p95": 801.5999999999999,
+              "p99": 825.0
+            },
+            "completion_tokens": {
+              "min": 182,
+              "max": 6990,
+              "mean": 653.7923904052936,
+              "p95": 1405.7999999999997,
+              "p99": 2823.2000000000007
+            },
+            "total_tokens": {
+              "min": 906,
+              "max": 7809,
+              "mean": 1413.430934656741,
+              "p95": 2178.5999999999995,
+              "p99": 3590.4000000000015
+            },
+            "latency_seconds": {
+              "min": 7.461794137954712,
+              "max": 99.10507678985596,
+              "mean": 22.354882049402786,
+              "p95": 45.50046830177307,
+              "p99": 64.23122351646441
+            },
+            "finish_reason_counts": {
+              "stop": 1209
+            },
+            "total_requests": 1209
+          },
+          "vllm_metrics": {
+            "queue_time_sum_seconds": 75.35678412491689,
+            "queue_time_count": 1209.0,
+            "queue_time_avg_seconds": 0.06232984625716864,
+            "preemptions_total": 0.0,
+            "prompt_tokens_total": 918403.0,
+            "generation_tokens_total": 790435.0,
+            "total_tokens": 1708838.0,
+            "duration_seconds": 133.56720495224
+          },
+          "log_statistics": {
+            "prompt_throughput": {
+              "min": 0.0,
+              "max": 5209.0,
+              "mean": 1119.5272727272727,
+              "p95": 3706.45,
+              "p99": 4908.490000000002
+            },
+            "generation_throughput": {
+              "min": 329.9,
+              "max": 14813.9,
+              "mean": 7179.654545454545,
+              "p95": 13988.099999999999,
+              "p99": 14648.740000000002
+            },
+            "running_reqs": {
+              "min": 2,
+              "max": 512,
+              "mean": 238.72727272727272,
+              "p95": 511.0,
+              "p99": 511.8
+            },
+            "waiting_reqs": {
+              "min": 0,
+              "max": 0,
+              "mean": 0,
+              "p95": 0.0,
+              "p99": 0.0
+            },
+            "kv_cache_usage_pct": {
+              "min": 3.5,
+              "max": 60.1,
+              "mean": 30.01818181818182,
+              "p95": 59.35,
+              "p99": 59.95
+            },
+            "prefix_cache_hit_rate": {
+              "min": 86.6,
+              "max": 86.7,
+              "mean": 86.60909090909091,
+              "p95": 86.65,
+              "p99": 86.69
+            },
+            "num_samples": 11
+          }
+        },
+        {
+          "source_filename": "gsm8k_platinum_cot_llama_seed_1236.json",
+          "evaluation_datetime": 1783364371.5000672,
+          "evaluation_datetime_iso": "2026-07-06T18:59:31.500067+00:00",
+          "evaluation_duration_seconds": 117.04445277096238,
+          "metrics": {
+            "exact_match,strict-match": {
+              "value": 0.9627791563275434,
+              "stderr": null
+            }
+          },
+          "proxy_statistics": {
+            "prompt_tokens": {
+              "min": 722,
+              "max": 887,
+              "mean": 759.6385442514475,
+              "p95": 801.5999999999999,
+              "p99": 825.0
+            },
+            "completion_tokens": {
+              "min": 180,
+              "max": 5624,
+              "mean": 636.7998345740281,
+              "p95": 1400.7999999999984,
+              "p99": 2715.640000000005
+            },
+            "total_tokens": {
+              "min": 907,
+              "max": 6435,
+              "mean": 1396.4383788254756,
+              "p95": 2160.7999999999993,
+              "p99": 3477.5200000000004
+            },
+            "latency_seconds": {
+              "min": 6.914437770843506,
+              "max": 74.97792673110962,
+              "mean": 21.817980677752182,
+              "p95": 43.7471572399139,
+              "p99": 63.861726551055966
+            },
+            "finish_reason_counts": {
+              "stop": 1209
+            },
+            "total_requests": 1209
+          },
+          "vllm_metrics": {
+            "queue_time_sum_seconds": 22.295540496415924,
+            "queue_time_count": 1209.0,
+            "queue_time_avg_seconds": 0.018441307275778265,
+            "preemptions_total": 0.0,
+            "prompt_tokens_total": 918403.0,
+            "generation_tokens_total": 769891.0,
+            "total_tokens": 1688294.0,
+            "duration_seconds": 118.85101842880249
+          },
+          "log_statistics": {
+            "prompt_throughput": {
+              "min": 0.0,
+              "max": 3958.7,
+              "mean": 976.1083333333333,
+              "p95": 3180.174999999999,
+              "p99": 3802.995000000001
+            },
+            "generation_throughput": {
+              "min": 0.0,
+              "max": 16317.5,
+              "mean": 6417.958333333333,
+              "p95": 14531.154999999999,
+              "p99": 15960.231000000003
+            },
+            "running_reqs": {
+              "min": 0,
+              "max": 512,
+              "mean": 228.5,
+              "p95": 511.45,
+              "p99": 511.89
+            },
+            "waiting_reqs": {
+              "min": 0,
+              "max": 0,
+              "mean": 0,
+              "p95": 0.0,
+              "p99": 0.0
+            },
+            "kv_cache_usage_pct": {
+              "min": 0.0,
+              "max": 60.9,
+              "mean": 25.466666666666665,
+              "p95": 59.19499999999999,
+              "p99": 60.559000000000005
+            },
+            "prefix_cache_hit_rate": {
+              "min": 86.6,
+              "max": 87.4,
+              "mean": 87.075,
+              "p95": 87.345,
+              "p99": 87.38900000000001
+            },
+            "num_samples": 12
+          }
+        },
+        {
+          "source_filename": "gsm8k_platinum_cot_llama_seed_1237.json",
+          "evaluation_datetime": 1783364490.4807785,
+          "evaluation_datetime_iso": "2026-07-06T19:01:30.480778+00:00",
+          "evaluation_duration_seconds": 125.99809530796483,
+          "metrics": {
+            "exact_match,strict-match": {
+              "value": 0.9636062861869313,
+              "stderr": null
+            }
+          },
+          "proxy_statistics": {
+            "prompt_tokens": {
+              "min": 722,
+              "max": 887,
+              "mean": 759.6385442514475,
+              "p95": 801.5999999999999,
+              "p99": 825.0
+            },
+            "completion_tokens": {
+              "min": 156,
+              "max": 6488,
+              "mean": 662.882547559967,
+              "p95": 1517.199999999999,
+              "p99": 3541.2000000000135
+            },
+            "total_tokens": {
+              "min": 905,
+              "max": 7292,
+              "mean": 1422.5210918114144,
+              "p95": 2272.1999999999994,
+              "p99": 4313.680000000013
+            },
+            "latency_seconds": {
+              "min": 6.4095752239227295,
+              "max": 93.22165632247925,
+              "mean": 22.425928679254056,
+              "p95": 46.916397905349726,
+              "p99": 65.77880156517037
+            },
+            "finish_reason_counts": {
+              "stop": 1209
+            },
+            "total_requests": 1209
+          },
+          "vllm_metrics": {
+            "queue_time_sum_seconds": 23.24511874897871,
+            "queue_time_count": 1209.0,
+            "queue_time_avg_seconds": 0.019226731802298357,
+            "preemptions_total": 0.0,
+            "prompt_tokens_total": 918403.0,
+            "generation_tokens_total": 801425.0,
+            "total_tokens": 1719828.0,
+            "duration_seconds": 127.75881457328796
+          },
+          "log_statistics": {
+            "prompt_throughput": {
+              "min": 0.0,
+              "max": 4716.4,
+              "mean": 897.8384615384615,
+              "p95": 3245.620000000001,
+              "p99": 4422.2440000000015
+            },
+            "generation_throughput": {
+              "min": 0.0,
+              "max": 15799.2,
+              "mean": 6166.807692307692,
+              "p95": 14122.560000000001,
+              "p99": 15463.872000000003
+            },
+            "running_reqs": {
+              "min": 0,
+              "max": 512,
+              "mean": 210.53846153846155,
+              "p95": 510.8,
+              "p99": 511.76
+            },
+            "waiting_reqs": {
+              "min": 0,
+              "max": 0,
+              "mean": 0,
+              "p95": 0.0,
+              "p99": 0.0
+            },
+            "kv_cache_usage_pct": {
+              "min": 0.0,
+              "max": 60.5,
+              "mean": 25.776923076923076,
+              "p95": 60.379999999999995,
+              "p99": 60.476
+            },
+            "prefix_cache_hit_rate": {
+              "min": 87.1,
+              "max": 87.5,
+              "mean": 87.23076923076923,
+              "p95": 87.44,
+              "p99": 87.488
+            },
+            "num_samples": 13
+          }
+        }
+      ],
+      "proxy_statistics_aggregate": {
+        "prompt_tokens": {
+          "min": 722,
+          "max": 887,
+          "mean": 759.6385442514475,
+          "p95": 802.0,
+          "p99": 825.0
+        },
+        "completion_tokens": {
+          "min": 156,
+          "max": 6990,
+          "mean": 651.1582575130963,
+          "p95": 1417.3999999999978,
+          "p99": 3051.7799999999897
+        },
+        "total_tokens": {
+          "min": 905,
+          "max": 7809,
+          "mean": 1410.7968017645437,
+          "p95": 2179.499999999999,
+          "p99": 3827.659999999998
+        },
+        "latency_seconds": {
+          "min": 6.4095752239227295,
+          "max": 99.10507678985596,
+          "mean": 22.199597135469674,
+          "p95": 45.39799885749815,
+          "p99": 64.4366940689087
+        },
+        "finish_reason_counts": {
+          "stop": 3627
+        },
+        "total_requests": 3627,
+        "num_seeds": 3
+      },
+      "vllm_metrics_aggregate": {
+        "queue_time_sum_seconds": 120.89744337031152,
+        "queue_time_count": 3627.0,
+        "queue_time_avg_seconds": 0.03333262844508175,
+        "preemptions_total": 0.0,
+        "prompt_tokens_total": 2755209.0,
+        "generation_tokens_total": 2361751.0,
+        "total_tokens": 5116960.0,
+        "duration_seconds": 380.17703795433044,
+        "num_seeds": 3
+      },
+      "log_statistics_aggregate": {
+        "prompt_throughput": {
+          "min": 0.0,
+          "max": 5209.0,
+          "mean": 991.6666666666666,
+          "p95": 4148.125,
+          "p99": 5036.589999999999
+        },
+        "generation_throughput": {
+          "min": 0.0,
+          "max": 16317.5,
+          "mean": 6560.0055555555555,
+          "p95": 15060.224999999999,
+          "p99": 16136.095
+        },
+        "running_reqs": {
+          "min": 0,
+          "max": 512,
+          "mean": 225.13888888888889,
+          "p95": 512.0,
+          "p99": 512.0
+        },
+        "waiting_reqs": {
+          "min": 0,
+          "max": 0,
+          "mean": 0,
+          "p95": 0.0,
+          "p99": 0.0
+        },
+        "kv_cache_usage_pct": {
+          "min": 0.0,
+          "max": 60.9,
+          "mean": 26.969444444444445,
+          "p95": 60.349999999999994,
+          "p99": 60.760000000000005
+        },
+        "prefix_cache_hit_rate": {
+          "min": 86.6,
+          "max": 87.5,
+          "mean": 86.98888888888888,
+          "p95": 87.4,
+          "p99": 87.465
+        },
+        "num_samples": 36,
+        "num_seeds": 3
+      }
+    },
+    {
+      "task_name": "ifeval",
+      "model_name": "Qwen/Qwen3-8B",
+      "harness": "lm_eval[api,ifeval,multilingual] @ git+https://github.com/neuralmagic/lm-evaluation-harness.git@main",
+      "harness_version": "0.4.13.dev0",
+      "inference_parameters": {
+        "do_sample": true,
+        "temperature": 0.8,
+        "top_p": 0.95,
+        "top_k": 50,
+        "max_gen_toks": 8192,
+        "seed": 1235,
+        "concurrency": 128,
+        "limit": null
+      },
+      "num_repetitions": 3,
+      "aggregate_stats": {
+        "evaluation_duration_seconds": {
+          "mean": 129.30514555765936,
+          "std": 5.720319552691569
+        },
+        "metrics": {
+          "inst_level_strict_acc,none": {
+            "value": {
+              "mean": 0.5039968025579536,
+              "std": 0.0013845330196393818
+            },
+            "stderr": {
+              "mean": null,
+              "std": 0.0
+            }
+          }
+        }
+      },
+      "runs": [
+        {
+          "source_filename": "ifeval_seed_1235.json",
+          "evaluation_datetime": 1783364618.278666,
+          "evaluation_datetime_iso": "2026-07-06T19:03:38.278666+00:00",
+          "evaluation_duration_seconds": 126.79015429795254,
+          "metrics": {
+            "inst_level_strict_acc,none": {
+              "value": 0.5047961630695443,
+              "stderr": null
+            }
+          },
+          "proxy_statistics": {
+            "prompt_tokens": {
+              "min": 21,
+              "max": 369,
+              "mean": 54.39186691312384,
+              "p95": 90.0,
+              "p99": 109.40000000000009
+            },
+            "completion_tokens": {
+              "min": 149,
+              "max": 8192,
+              "mean": 1080.1829944547135,
+              "p95": 2993.0,
+              "p99": 8192.0
+            },
+            "total_tokens": {
+              "min": 190,
+              "max": 8263,
+              "mean": 1134.5748613678372,
+              "p95": 3040.0,
+              "p99": 8230.2
+            },
+            "latency_seconds": {
+              "min": 2.010429620742798,
+              "max": 91.53111386299133,
+              "mean": 12.896559886262509,
+              "p95": 37.28050446510315,
+              "p99": 85.71927790641807
+            },
+            "finish_reason_counts": {
+              "stop": 534,
+              "length": 7
+            },
+            "total_requests": 541
+          },
+          "vllm_metrics": {
+            "queue_time_sum_seconds": 0.013376710703596473,
+            "queue_time_count": 541.0,
+            "queue_time_avg_seconds": 2.472589778853322e-05,
+            "preemptions_total": 0.0,
+            "prompt_tokens_total": 29426.0,
+            "generation_tokens_total": 584379.0,
+            "total_tokens": 613805.0,
+            "duration_seconds": 128.8975646495819
+          },
+          "log_statistics": {
+            "prompt_throughput": {
+              "min": 0.0,
+              "max": 892.2,
+              "mean": 226.21538461538464,
+              "p95": 783.9000000000001,
+              "p99": 870.5400000000002
+            },
+            "generation_throughput": {
+              "min": 5.7,
+              "max": 11004.7,
+              "mean": 4495.307692307692,
+              "p95": 10687.84,
+              "p99": 10941.328000000001
+            },
+            "running_reqs": {
+              "min": 0,
+              "max": 128,
+              "mean": 51.76923076923077,
+              "p95": 127.4,
+              "p99": 127.88
+            },
+            "waiting_reqs": {
+              "min": 0,
+              "max": 0,
+              "mean": 0,
+              "p95": 0.0,
+              "p99": 0.0
+            },
+            "kv_cache_usage_pct": {
+              "min": 0.0,
+              "max": 29.7,
+              "mean": 15.269230769230768,
+              "p95": 28.8,
+              "p99": 29.520000000000003
+            },
+            "prefix_cache_hit_rate": {
+              "min": 79.9,
+              "max": 87.2,
+              "mean": 81.57692307692308,
+              "p95": 86.36,
+              "p99": 87.03200000000001
+            },
+            "num_samples": 13
+          }
+        },
+        {
+          "source_filename": "ifeval_seed_1236.json",
+          "evaluation_datetime": 1783364763.2955883,
+          "evaluation_datetime_iso": "2026-07-06T19:06:03.295588+00:00",
+          "evaluation_duration_seconds": 135.85208066704217,
+          "metrics": {
+            "inst_level_strict_acc,none": {
+              "value": 0.5023980815347722,
+              "stderr": null
+            }
+          },
+          "proxy_statistics": {
+            "prompt_tokens": {
+              "min": 21,
+              "max": 369,
+              "mean": 54.39186691312384,
+              "p95": 90.0,
+              "p99": 109.40000000000009
+            },
+            "completion_tokens": {
+              "min": 159,
+              "max": 8192,
+              "mean": 1134.743068391867,
+              "p95": 2924.0,
+              "p99": 8192.0
+            },
+            "total_tokens": {
+              "min": 192,
+              "max": 8289,
+              "mean": 1189.1349353049907,
+              "p95": 2967.0,
+              "p99": 8257.8
+            },
+            "latency_seconds": {
+              "min": 1.9602892398834229,
+              "max": 94.20590424537659,
+              "mean": 13.25974868670409,
+              "p95": 34.66751551628113,
+              "p99": 92.99756588935857
+            },
+            "finish_reason_counts": {
+              "stop": 527,
+              "length": 14
+            },
+            "total_requests": 541
+          },
+          "vllm_metrics": {
+            "queue_time_sum_seconds": 0.01083992829080671,
+            "queue_time_count": 541.0,
+            "queue_time_avg_seconds": 2.0036836027369152e-05,
+            "preemptions_total": 0.0,
+            "prompt_tokens_total": 29426.0,
+            "generation_tokens_total": 613896.0,
+            "total_tokens": 643322.0,
+            "duration_seconds": 137.99809408187866
+          },
+          "log_statistics": {
+            "prompt_throughput": {
+              "min": 0.0,
+              "max": 648.9,
+              "mean": 199.65714285714284,
+              "p95": 634.2099999999999,
+              "p99": 645.9619999999999
+            },
+            "generation_throughput": {
+              "min": 0.0,
+              "max": 11805.5,
+              "mean": 4377.957142857143,
+              "p95": 11212.894999999999,
+              "p99": 11686.979
+            },
+            "running_reqs": {
+              "min": 0,
+              "max": 128,
+              "mean": 54,
+              "p95": 128.0,
+              "p99": 128.0
+            },
+            "waiting_reqs": {
+              "min": 0,
+              "max": 0,
+              "mean": 0,
+              "p95": 0.0,
+              "p99": 0.0
+            },
+            "kv_cache_usage_pct": {
+              "min": 0.0,
+              "max": 25.3,
+              "mean": 17.40714285714286,
+              "p95": 24.325000000000003,
+              "p99": 25.105
+            },
+            "prefix_cache_hit_rate": {
+              "min": 2.6,
+              "max": 79.9,
+              "mean": 21.97142857142857,
+              "p95": 77.17,
+              "p99": 79.35400000000001
+            },
+            "num_samples": 14
+          }
+        },
+        {
+          "source_filename": "ifeval_seed_1237.json",
+          "evaluation_datetime": 1783364901.4011962,
+          "evaluation_datetime_iso": "2026-07-06T19:08:21.401196+00:00",
+          "evaluation_duration_seconds": 125.27320170798339,
+          "metrics": {
+            "inst_level_strict_acc,none": {
+              "value": 0.5047961630695443,
+              "stderr": null
+            }
+          },
+          "proxy_statistics": {
+            "prompt_tokens": {
+              "min": 21,
+              "max": 369,
+              "mean": 54.39186691312384,
+              "p95": 90.0,
+              "p99": 109.40000000000009
+            },
+            "completion_tokens": {
+              "min": 147,
+              "max": 8192,
+              "mean": 1071.8613678373383,
+              "p95": 2734.0,
+              "p99": 7189.200000000057
+            },
+            "total_tokens": {
+              "min": 188,
+              "max": 8278,
+              "mean": 1126.253234750462,
+              "p95": 2771.0,
+              "p99": 7223.8000000000575
+            },
+            "latency_seconds": {
+              "min": 1.895965814590454,
+              "max": 87.03575539588928,
+              "mean": 12.5144768664665,
+              "p95": 32.36960816383362,
+              "p99": 69.68665642738387
+            },
+            "finish_reason_counts": {
+              "stop": 535,
+              "length": 6
+            },
+            "total_requests": 541
+          },
+          "vllm_metrics": {
+            "queue_time_sum_seconds": 0.01701513968873769,
+            "queue_time_count": 541.0,
+            "queue_time_avg_seconds": 3.145127484055026e-05,
+            "preemptions_total": 0.0,
+            "prompt_tokens_total": 29426.0,
+            "generation_tokens_total": 579877.0,
+            "total_tokens": 609303.0,
+            "duration_seconds": 127.37911868095398
+          },
+          "log_statistics": {
+            "prompt_throughput": {
+              "min": 0.0,
+              "max": 680.5,
+              "mean": 220.2923076923077,
+              "p95": 640.96,
+              "p99": 672.592
+            },
+            "generation_throughput": {
+              "min": 94.6,
+              "max": 11381.2,
+              "mean": 4467.384615384615,
+              "p95": 10966.96,
+              "p99": 11298.352
+            },
+            "running_reqs": {
+              "min": 0,
+              "max": 128,
+              "mean": 53.69230769230769,
+              "p95": 128.0,
+              "p99": 128.0
+            },
+            "waiting_reqs": {
+              "min": 0,
+              "max": 0,
+              "mean": 0,
+              "p95": 0.0,
+              "p99": 0.0
+            },
+            "kv_cache_usage_pct": {
+              "min": 0.0,
+              "max": 27.1,
+              "mean": 13.669230769230769,
+              "p95": 25.900000000000002,
+              "p99": 26.860000000000003
+            },
+            "prefix_cache_hit_rate": {
+              "min": 2.8,
+              "max": 4.2,
+              "mean": 3.661538461538462,
+              "p95": 4.08,
+              "p99": 4.176
+            },
+            "num_samples": 13
+          }
+        }
+      ],
+      "proxy_statistics_aggregate": {
+        "prompt_tokens": {
+          "min": 21,
+          "max": 369,
+          "mean": 54.39186691312384,
+          "p95": 90.0,
+          "p99": 111.0
+        },
+        "completion_tokens": {
+          "min": 147,
+          "max": 8192,
+          "mean": 1095.5958102279728,
+          "p95": 2844.2000000000007,
+          "p99": 8192.0
+        },
+        "total_tokens": {
+          "min": 188,
+          "max": 8289,
+          "mean": 1149.9876771410968,
+          "p95": 2888.100000000001,
+          "p99": 8239.0
+        },
+        "latency_seconds": {
+          "min": 1.895965814590454,
+          "max": 94.20590424537659,
+          "mean": 12.890261813144367,
+          "p95": 33.510407304763795,
+          "p99": 89.72512981891632
+        },
+        "finish_reason_counts": {
+          "stop": 1596,
+          "length": 27
+        },
+        "total_requests": 1623,
+        "num_seeds": 3
+      },
+      "vllm_metrics_aggregate": {
+        "queue_time_sum_seconds": 0.041231778683140874,
+        "queue_time_count": 1623.0,
+        "queue_time_avg_seconds": 2.5404669552150877e-05,
+        "preemptions_total": 0.0,
+        "prompt_tokens_total": 88278.0,
+        "generation_tokens_total": 1778152.0,
+        "total_tokens": 1866430.0,
+        "duration_seconds": 394.27477741241455,
+        "num_seeds": 3
+      },
+      "log_statistics_aggregate": {
+        "prompt_throughput": {
+          "min": 0.0,
+          "max": 892.2,
+          "mean": 214.995,
+          "p95": 682.06,
+          "p99": 821.805
+        },
+        "generation_throughput": {
+          "min": 0.0,
+          "max": 11805.5,
+          "mean": 4445.16,
+          "p95": 11023.524999999998,
+          "p99": 11640.023000000001
+        },
+        "running_reqs": {
+          "min": 0,
+          "max": 128,
+          "mean": 53.175,
+          "p95": 128.0,
+          "p99": 128.0
+        },
+        "waiting_reqs": {
+          "min": 0,
+          "max": 0,
+          "mean": 0,
+          "p95": 0.0,
+          "p99": 0.0
+        },
+        "kv_cache_usage_pct": {
+          "min": 0.0,
+          "max": 29.7,
+          "mean": 15.4975,
+          "p95": 27.154999999999998,
+          "p99": 29.115
+        },
+        "prefix_cache_hit_rate": {
+          "min": 2.6,
+          "max": 87.2,
+          "mean": 35.3925,
+          "p95": 84.37499999999999,
+          "p99": 86.654
+        },
+        "num_samples": 40,
+        "num_seeds": 3
+      }
+    },
+    {
+      "task_name": "math_500|0",
+      "model_name": "hosted_vllm/Qwen/Qwen3-8B",
+      "harness": "lighteval[extended] @ git+https://github.com/neuralmagic/lighteval.git@eldar-fix-litellm",
+      "harness_version": "0.13.1.dev0",
+      "inference_parameters": {
+        "do_sample": true,
+        "temperature": 0.8,
+        "top_p": 0.95,
+        "top_k": 50,
+        "max_gen_toks": 8192,
+        "seed": 1235,
+        "concurrency": 32,
+        "limit": null
+      },
+      "num_repetitions": 3,
+      "aggregate_stats": {
+        "evaluation_duration_seconds": {
+          "mean": 690.1830033853184,
+          "std": 6.81410634003794
+        },
+        "metrics": {
+          "pass@k:k=1&n=1": {
+            "value": {
+              "mean": 0.8806666666666667,
+              "std": 0.007571877794400371
+            },
+            "stderr": {
+              "mean": 0.014506112074040638,
+              "std": 0.00039326826139898774
+            }
+          }
+        }
+      },
+      "runs": [
+        {
+          "source_filename": "math_500_seed_1235_2026-07-07T00-56-38.910332.json",
+          "evaluation_datetime": 1783385798.910332,
+          "evaluation_datetime_iso": "2026-07-07T00:56:38.910332+00:00",
+          "evaluation_duration_seconds": 683.0801654229872,
+          "metrics": {
+            "pass@k:k=1&n=1": {
+              "value": 0.886,
+              "stderr": 0.014227186146645572
+            }
+          },
+          "proxy_statistics": {
+            "prompt_tokens": {
+              "min": 63,
+              "max": 846,
+              "mean": 125.94,
+              "p95": 256.1,
+              "p99": 397.05999999999995
+            },
+            "completion_tokens": {
+              "min": 486,
+              "max": 8192,
+              "mean": 3709.396,
+              "p95": 8192.0,
+              "p99": 8192.0
+            },
+            "total_tokens": {
+              "min": 554,
+              "max": 8595,
+              "mean": 3835.336,
+              "p95": 8354.05,
+              "p99": 8492.04
+            },
+            "latency_seconds": {
+              "min": 4.537558317184448,
+              "max": 102.30792021751404,
+              "mean": 41.0420603094101,
+              "p95": 95.20404492616653,
+              "p99": 99.78343584537507
+            },
+            "finish_reason_counts": {
+              "stop": 427,
+              "length": 73
+            },
+            "total_requests": 500
+          },
+          "vllm_metrics": {
+            "queue_time_sum_seconds": 0.0035992140183225274,
+            "queue_time_count": 500.0,
+            "queue_time_avg_seconds": 7.198428036645055e-06,
+            "preemptions_total": 0.0,
+            "prompt_tokens_total": 62970.0,
+            "generation_tokens_total": 1854698.0,
+            "total_tokens": 1917668.0,
+            "duration_seconds": 695.2248480319977
+          },
+          "log_statistics": {
+            "prompt_throughput": {
+              "min": 0.0,
+              "max": 904.6,
+              "mean": 54.864788732394366,
+              "p95": 104.85,
+              "p99": 405.49999999999795
+            },
+            "generation_throughput": {
+              "min": 0.0,
+              "max": 3763.1,
+              "mean": 2614.1267605633802,
+              "p95": 3243.4,
+              "p99": 3547.9899999999993
+            },
+            "running_reqs": {
+              "min": 0,
+              "max": 32,
+              "mean": 28.985915492957748,
+              "p95": 32.0,
+              "p99": 32.0
+            },
+            "waiting_reqs": {
+              "min": 0,
+              "max": 0,
+              "mean": 0,
+              "p95": 0.0,
+              "p99": 0.0
+            },
+            "kv_cache_usage_pct": {
+              "min": 0.0,
+              "max": 39.6,
+              "mean": 19.935211267605634,
+              "p95": 34.099999999999994,
+              "p99": 38.059999999999995
+            },
+            "prefix_cache_hit_rate": {
+              "min": 80.4,
+              "max": 84.7,
+              "mean": 82.53802816901408,
+              "p95": 84.0,
+              "p99": 84.7
+            },
+            "num_samples": 71
+          }
+        },
+        {
+          "source_filename": "math_500_seed_1236_2026-07-07T01-08-21.713440.json",
+          "evaluation_datetime": 1783386501.71344,
+          "evaluation_datetime_iso": "2026-07-07T01:08:21.713440+00:00",
+          "evaluation_duration_seconds": 690.8028161729453,
+          "metrics": {
+            "pass@k:k=1&n=1": {
+              "value": 0.884,
+              "stderr": 0.01433523623788568
+            }
+          },
+          "proxy_statistics": {
+            "prompt_tokens": {
+              "min": 63,
+              "max": 846,
+              "mean": 125.94,
+              "p95": 256.1,
+              "p99": 397.05999999999995
+            },
+            "completion_tokens": {
+              "min": 581,
+              "max": 8192,
+              "mean": 3763.582,
+              "p95": 8192.0,
+              "p99": 8192.0
+            },
+            "total_tokens": {
+              "min": 669,
+              "max": 8914,
+              "mean": 3889.522,
+              "p95": 8365.25,
+              "p99": 8521.039999999999
+            },
+            "latency_seconds": {
+              "min": 6.4503843784332275,
+              "max": 102.50808691978455,
+              "mean": 41.92709691810608,
+              "p95": 96.3666983127594,
+              "p99": 100.63721477746962
+            },
+            "finish_reason_counts": {
+              "stop": 426,
+              "length": 74
+            },
+            "total_requests": 500
+          },
+          "vllm_metrics": {
+            "queue_time_sum_seconds": 0.0031748873880133033,
+            "queue_time_count": 500.0,
+            "queue_time_avg_seconds": 6.349774776026607e-06,
+            "preemptions_total": 0.0,
+            "prompt_tokens_total": 62970.0,
+            "generation_tokens_total": 1881791.0,
+            "total_tokens": 1944761.0,
+            "duration_seconds": 701.9955141544342
+          },
+          "log_statistics": {
+            "prompt_throughput": {
+              "min": 0.0,
+              "max": 899.7,
+              "mean": 55.57857142857143,
+              "p95": 79.19999999999999,
+              "p99": 417.18300000000164
+            },
+            "generation_throughput": {
+              "min": 0.0,
+              "max": 3403.5,
+              "mean": 2688.1471428571426,
+              "p95": 3305.575,
+              "p99": 3381.765
+            },
+            "running_reqs": {
+              "min": 0,
+              "max": 32,
+              "mean": 29.814285714285713,
+              "p95": 32.0,
+              "p99": 32.0
+            },
+            "waiting_reqs": {
+              "min": 0,
+              "max": 0,
+              "mean": 0,
+              "p95": 0.0,
+              "p99": 0.0
+            },
+            "kv_cache_usage_pct": {
+              "min": 0.0,
+              "max": 44.8,
+              "mean": 21.322857142857142,
+              "p95": 34.97999999999999,
+              "p99": 42.79900000000001
+            },
+            "prefix_cache_hit_rate": {
+              "min": 38.2,
+              "max": 80.4,
+              "mean": 68.98714285714286,
+              "p95": 78.95500000000001,
+              "p99": 79.503
+            },
+            "num_samples": 70
+          }
+        },
+        {
+          "source_filename": "math_500_seed_1237_2026-07-07T01-20-10.158308.json",
+          "evaluation_datetime": 1783387210.158308,
+          "evaluation_datetime_iso": "2026-07-07T01:20:10.158308+00:00",
+          "evaluation_duration_seconds": 696.6660285600228,
+          "metrics": {
+            "pass@k:k=1&n=1": {
+              "value": 0.872,
+              "stderr": 0.014955913837590661
+            }
+          },
+          "proxy_statistics": {
+            "prompt_tokens": {
+              "min": 63,
+              "max": 846,
+              "mean": 125.94,
+              "p95": 256.1,
+              "p99": 397.05999999999995
+            },
+            "completion_tokens": {
+              "min": 643,
+              "max": 8192,
+              "mean": 3758.224,
+              "p95": 8192.0,
+              "p99": 8192.0
+            },
+            "total_tokens": {
+              "min": 729,
+              "max": 8947,
+              "mean": 3884.164,
+              "p95": 8354.05,
+              "p99": 8492.04
+            },
+            "latency_seconds": {
+              "min": 6.416286468505859,
+              "max": 101.43044209480286,
+              "mean": 41.794795256137846,
+              "p95": 95.59097148180008,
+              "p99": 99.4030782842636
+            },
+            "finish_reason_counts": {
+              "stop": 430,
+              "length": 70
+            },
+            "total_requests": 500
+          },
+          "vllm_metrics": {
+            "queue_time_sum_seconds": 0.0030076063703745604,
+            "queue_time_count": 500.0,
+            "queue_time_avg_seconds": 6.015212740749121e-06,
+            "preemptions_total": 0.0,
+            "prompt_tokens_total": 62970.0,
+            "generation_tokens_total": 1879112.0,
+            "total_tokens": 1942082.0,
+            "duration_seconds": 707.5749657154083
+          },
+          "log_statistics": {
+            "prompt_throughput": {
+              "min": 0.0,
+              "max": 899.7,
+              "mean": 54.79577464788733,
+              "p95": 80.35,
+              "p99": 393.24999999999795
+            },
+            "generation_throughput": {
+              "min": 0.0,
+              "max": 3548.2,
+              "mean": 2646.5394366197183,
+              "p95": 3188.9,
+              "p99": 3360.249999999999
+            },
+            "running_reqs": {
+              "min": 0,
+              "max": 32,
+              "mean": 29.422535211267604,
+              "p95": 32.0,
+              "p99": 32.0
+            },
+            "waiting_reqs": {
+              "min": 0,
+              "max": 0,
+              "mean": 0,
+              "p95": 0.0,
+              "p99": 0.0
+            },
+            "kv_cache_usage_pct": {
+              "min": 0.0,
+              "max": 39.7,
+              "mean": 20.801408450704226,
+              "p95": 33.75,
+              "p99": 38.51
+            },
+            "prefix_cache_hit_rate": {
+              "min": 38.2,
+              "max": 38.2,
+              "mean": 38.2,
+              "p95": 38.2,
+              "p99": 38.2
+            },
+            "num_samples": 71
+          }
+        }
+      ],
+      "proxy_statistics_aggregate": {
+        "prompt_tokens": {
+          "min": 63,
+          "max": 846,
+          "mean": 125.94,
+          "p95": 256.0999999999999,
+          "p99": 397.05999999999995
+        },
+        "completion_tokens": {
+          "min": 486,
+          "max": 8192,
+          "mean": 3743.734,
+          "p95": 8192.0,
+          "p99": 8192.0
+        },
+        "total_tokens": {
+          "min": 554,
+          "max": 8947,
+          "mean": 3869.674,
+          "p95": 8355.1,
+          "p99": 8496.0
+        },
+        "latency_seconds": {
+          "min": 4.537558317184448,
+          "max": 102.50808691978455,
+          "mean": 41.58798416121801,
+          "p95": 95.73318268060684,
+          "p99": 100.54984140634537
+        },
+        "finish_reason_counts": {
+          "stop": 1283,
+          "length": 217
+        },
+        "total_requests": 1500,
+        "num_seeds": 3
+      },
+      "vllm_metrics_aggregate": {
+        "queue_time_sum_seconds": 0.009781707776710391,
+        "queue_time_count": 1500.0,
+        "queue_time_avg_seconds": 6.521138517806928e-06,
+        "preemptions_total": 0.0,
+        "prompt_tokens_total": 188910.0,
+        "generation_tokens_total": 5615601.0,
+        "total_tokens": 5804511.0,
+        "duration_seconds": 2104.79532790184,
+        "num_seeds": 3
+      },
+      "log_statistics_aggregate": {
+        "prompt_throughput": {
+          "min": 0.0,
+          "max": 904.6,
+          "mean": 55.07735849056604,
+          "p95": 91.2349999999999,
+          "p99": 822.7769999999905
+        },
+        "generation_throughput": {
+          "min": 0.0,
+          "max": 3763.1,
+          "mean": 2649.422641509434,
+          "p95": 3252.6749999999997,
+          "p99": 3450.0469999999996
+        },
+        "running_reqs": {
+          "min": 0,
+          "max": 32,
+          "mean": 29.40566037735849,
+          "p95": 32.0,
+          "p99": 32.0
+        },
+        "waiting_reqs": {
+          "min": 0,
+          "max": 0,
+          "mean": 0,
+          "p95": 0.0,
+          "p99": 0.0
+        },
+        "kv_cache_usage_pct": {
+          "min": 0.0,
+          "max": 44.8,
+          "mean": 20.683490566037737,
+          "p95": 34.3,
+          "p99": 40.32299999999999
+        },
+        "prefix_cache_hit_rate": {
+          "min": 38.2,
+          "max": 84.7,
+          "mean": 63.214622641509436,
+          "p95": 83.9,
+          "p99": 84.0
+        },
+        "num_samples": 212,
+        "num_seeds": 3
+      }
+    },
+    {
+      "task_name": "mmlu_cot_llama",
+      "model_name": "Qwen/Qwen3-8B",
+      "harness": "lm_eval[api,ifeval,multilingual] @ git+https://github.com/neuralmagic/lm-evaluation-harness.git@main",
+      "harness_version": "0.4.13.dev0",
+      "inference_parameters": {
+        "do_sample": true,
+        "temperature": 0.8,
+        "top_p": 0.95,
+        "top_k": 50,
+        "max_gen_toks": 8192,
+        "seed": 1235,
+        "concurrency": 128,
+        "limit": null
+      },
+      "num_repetitions": 3,
+      "aggregate_stats": {
+        "evaluation_duration_seconds": {
+          "mean": 1748.335854807364,
+          "std": 10.569135096994032
+        },
+        "metrics": {
+          "exact_match,strict_match": {
+            "value": {
+              "mean": 0.8182357688838247,
+              "std": 0.0010003944122729572
+            },
+            "stderr": {
+              "mean": null,
+              "std": 0.0
+            }
+          }
+        }
+      },
+      "runs": [
+        {
+          "source_filename": "mmlu_cot_llama_seed_1235.json",
+          "evaluation_datetime": 1783365028.7554514,
+          "evaluation_datetime_iso": "2026-07-06T19:10:28.755451+00:00",
+          "evaluation_duration_seconds": 1746.182431893074,
+          "metrics": {
+            "exact_match,strict_match": {
+              "value": 0.8191853012391397,
+              "stderr": null
+            }
+          },
+          "proxy_statistics": {
+            "prompt_tokens": {
+              "min": 151,
+              "max": 1125,
+              "mean": 235.44886768266628,
+              "p95": 440.0,
+              "p99": 594.5900000000001
+            },
+            "completion_tokens": {
+              "min": 149,
+              "max": 8192,
+              "mean": 970.5852442671984,
+              "p95": 2779.0,
+              "p99": 4904.0300000000025
+            },
+            "total_tokens": {
+              "min": 313,
+              "max": 8713,
+              "mean": 1206.0341119498646,
+              "p95": 3099.850000000002,
+              "p99": 5226.59
+            },
+            "latency_seconds": {
+              "min": 1.9361469745635986,
+              "max": 151.20366978645325,
+              "mean": 14.720716551776082,
+              "p95": 45.60583823919303,
+              "p99": 81.40847902536393
+            },
+            "finish_reason_counts": {
+              "stop": 14012,
+              "length": 30
+            },
+            "total_requests": 14042
+          },
+          "vllm_metrics": {
+            "queue_time_sum_seconds": 4.894275966624264,
+            "queue_time_count": 14042.0,
+            "queue_time_avg_seconds": 0.00034854550396127784,
+            "preemptions_total": 0.0,
+            "prompt_tokens_total": 3306173.0,
+            "generation_tokens_total": 13628958.0,
+            "total_tokens": 16935131.0,
+            "duration_seconds": 1748.3385174274445
+          },
+          "log_statistics": {
+            "prompt_throughput": {
+              "min": 0.0,
+              "max": 3452.1,
+              "mean": 1699.0591715976332,
+              "p95": 2736.74,
+              "p99": 3214.2119999999995
+            },
+            "generation_throughput": {
+              "min": 0.0,
+              "max": 10486.0,
+              "mean": 8063.902958579882,
+              "p95": 10154.8,
+              "p99": 10342.46
+            },
+            "running_reqs": {
+              "min": 0,
+              "max": 128,
+              "mean": 122.01775147928994,
+              "p95": 128.0,
+              "p99": 128.0
+            },
+            "waiting_reqs": {
+              "min": 0,
+              "max": 0,
+              "mean": 0,
+              "p95": 0.0,
+              "p99": 0.0
+            },
+            "kv_cache_usage_pct": {
+              "min": 0.0,
+              "max": 65.4,
+              "mean": 36.68639053254438,
+              "p95": 57.83999999999999,
+              "p99": 64.432
+            },
+            "prefix_cache_hit_rate": {
+              "min": 3.7,
+              "max": 36.2,
+              "mean": 11.011834319526628,
+              "p95": 25.86,
+              "p99": 36.064
+            },
+            "num_samples": 169
+          }
+        },
+        {
+          "source_filename": "mmlu_cot_llama_seed_1236.json",
+          "evaluation_datetime": 1783366777.338092,
+          "evaluation_datetime_iso": "2026-07-06T19:39:37.338092+00:00",
+          "evaluation_duration_seconds": 1759.8158683370566,
+          "metrics": {
+            "exact_match,strict_match": {
+              "value": 0.8171912832929782,
+              "stderr": null
+            }
+          },
+          "proxy_statistics": {
+            "prompt_tokens": {
+              "min": 151,
+              "max": 1125,
+              "mean": 235.44886768266628,
+              "p95": 440.0,
+              "p99": 594.5900000000001
+            },
+            "completion_tokens": {
+              "min": 137,
+              "max": 8192,
+              "mean": 980.8766557470445,
+              "p95": 2795.9500000000007,
+              "p99": 5033.310000000001
+            },
+            "total_tokens": {
+              "min": 308,
+              "max": 8908,
+              "mean": 1216.3255234297108,
+              "p95": 3104.800000000003,
+              "p99": 5308.18
+            },
+            "latency_seconds": {
+              "min": 1.8299901485443115,
+              "max": 154.27501130104065,
+              "mean": 14.980366914212203,
+              "p95": 45.76818771362308,
+              "p99": 84.5808544611931
+            },
+            "finish_reason_counts": {
+              "stop": 14012,
+              "length": 30
+            },
+            "total_requests": 14042
+          },
+          "vllm_metrics": {
+            "queue_time_sum_seconds": 4.847786809667014,
+            "queue_time_count": 14042.0,
+            "queue_time_avg_seconds": 0.00034523478205861083,
+            "preemptions_total": 0.0,
+            "prompt_tokens_total": 3306173.0,
+            "generation_tokens_total": 13773470.0,
+            "total_tokens": 17079643.0,
+            "duration_seconds": 1761.7627427577972
+          },
+          "log_statistics": {
+            "prompt_throughput": {
+              "min": 0.0,
+              "max": 3762.5,
+              "mean": 1668.921511627907,
+              "p95": 2894.8299999999995,
+              "p99": 3102.9119999999994
+            },
+            "generation_throughput": {
+              "min": 0.0,
+              "max": 10626.1,
+              "mean": 8007.230813953488,
+              "p95": 10165.294999999998,
+              "p99": 10433.006
+            },
+            "running_reqs": {
+              "min": 0,
+              "max": 128,
+              "mean": 122.05232558139535,
+              "p95": 128.0,
+              "p99": 128.0
+            },
+            "waiting_reqs": {
+              "min": 0,
+              "max": 0,
+              "mean": 0,
+              "p95": 0.0,
+              "p99": 0.0
+            },
+            "kv_cache_usage_pct": {
+              "min": 0.0,
+              "max": 68.2,
+              "mean": 37.40930232558139,
+              "p95": 58.739999999999995,
+              "p99": 66.79299999999998
+            },
+            "prefix_cache_hit_rate": {
+              "min": 4.4,
+              "max": 36.2,
+              "mean": 11.055813953488371,
+              "p95": 26.0,
+              "p99": 36.0
+            },
+            "num_samples": 172
+          }
+        },
+        {
+          "source_filename": "mmlu_cot_llama_seed_1237.json",
+          "evaluation_datetime": 1783368539.2762928,
+          "evaluation_datetime_iso": "2026-07-06T20:08:59.276293+00:00",
+          "evaluation_duration_seconds": 1739.0092641919618,
+          "metrics": {
+            "exact_match,strict_match": {
+              "value": 0.8183307221193562,
+              "stderr": null
+            }
+          },
+          "proxy_statistics": {
+            "prompt_tokens": {
+              "min": 151,
+              "max": 1125,
+              "mean": 235.44886768266628,
+              "p95": 440.0,
+              "p99": 594.5900000000001
+            },
+            "completion_tokens": {
+              "min": 132,
+              "max": 8192,
+              "mean": 973.6788206808147,
+              "p95": 2770.9000000000015,
+              "p99": 4964.360000000001
+            },
+            "total_tokens": {
+              "min": 289,
+              "max": 8906,
+              "mean": 1209.127688363481,
+              "p95": 3099.9000000000015,
+              "p99": 5282.310000000001
+            },
+            "latency_seconds": {
+              "min": 1.7794394493103027,
+              "max": 149.35557079315186,
+              "mean": 14.776949334171759,
+              "p95": 44.62101325988772,
+              "p99": 81.50390509366991
+            },
+            "finish_reason_counts": {
+              "stop": 14012,
+              "length": 30
+            },
+            "total_requests": 14042
+          },
+          "vllm_metrics": {
+            "queue_time_sum_seconds": 3.209803105390165,
+            "queue_time_count": 14042.0,
+            "queue_time_avg_seconds": 0.0002285858927068911,
+            "preemptions_total": 0.0,
+            "prompt_tokens_total": 3306173.0,
+            "generation_tokens_total": 13672398.0,
+            "total_tokens": 16978571.0,
+            "duration_seconds": 1740.953914642334
+          },
+          "log_statistics": {
+            "prompt_throughput": {
+              "min": 0.0,
+              "max": 3986.2,
+              "mean": 1689.0241176470588,
+              "p95": 2772.695,
+              "p99": 3165.789000000001
+            },
+            "generation_throughput": {
+              "min": 0.0,
+              "max": 10885.7,
+              "mean": 8041.981764705883,
+              "p95": 10097.779999999999,
+              "p99": 10329.112000000001
+            },
+            "running_reqs": {
+              "min": 0,
+              "max": 128,
+              "mean": 122.04705882352941,
+              "p95": 128.0,
+              "p99": 128.0
+            },
+            "waiting_reqs": {
+              "min": 0,
+              "max": 0,
+              "mean": 0,
+              "p95": 0.0,
+              "p99": 0.0
+            },
+            "kv_cache_usage_pct": {
+              "min": 0.0,
+              "max": 60.2,
+              "mean": 36.53823529411765,
+              "p95": 55.510000000000005,
+              "p99": 58.662000000000006
+            },
+            "prefix_cache_hit_rate": {
+              "min": 4.4,
+              "max": 36.2,
+              "mean": 10.998235294117647,
+              "p95": 26.340000000000007,
+              "p99": 36.0
+            },
+            "num_samples": 170
+          }
+        }
+      ],
+      "proxy_statistics_aggregate": {
+        "prompt_tokens": {
+          "min": 151,
+          "max": 1125,
+          "mean": 235.44886768266628,
+          "p95": 440.0,
+          "p99": 595.0
+        },
+        "completion_tokens": {
+          "min": 132,
+          "max": 8192,
+          "mean": 975.0469068983525,
+          "p95": 2785.0,
+          "p99": 4965.0
+        },
+        "total_tokens": {
+          "min": 289,
+          "max": 8908,
+          "mean": 1210.4957745810188,
+          "p95": 3101.0,
+          "p99": 5278.5
+        },
+        "latency_seconds": {
+          "min": 1.7794394493103027,
+          "max": 154.27501130104065,
+          "mean": 14.826010933386682,
+          "p95": 45.3516862988472,
+          "p99": 82.8264394402504
+        },
+        "finish_reason_counts": {
+          "stop": 42036,
+          "length": 90
+        },
+        "total_requests": 42126,
+        "num_seeds": 3
+      },
+      "vllm_metrics_aggregate": {
+        "queue_time_sum_seconds": 12.951865881681442,
+        "queue_time_count": 42126.0,
+        "queue_time_avg_seconds": 0.0003074553929089266,
+        "preemptions_total": 0.0,
+        "prompt_tokens_total": 9918519.0,
+        "generation_tokens_total": 41074826.0,
+        "total_tokens": 50993345.0,
+        "duration_seconds": 5251.055174827576,
+        "num_seeds": 3
+      },
+      "log_statistics_aggregate": {
+        "prompt_throughput": {
+          "min": 0.0,
+          "max": 3986.2,
+          "mean": 1685.576516634051,
+          "p95": 2844.15,
+          "p99": 3186.16
+        },
+        "generation_throughput": {
+          "min": 0.0,
+          "max": 10885.7,
+          "mean": 8037.534637964775,
+          "p95": 10158.05,
+          "p99": 10423.289999999999
+        },
+        "running_reqs": {
+          "min": 0,
+          "max": 128,
+          "mean": 122.03913894324853,
+          "p95": 128.0,
+          "p99": 128.0
+        },
+        "waiting_reqs": {
+          "min": 0,
+          "max": 0,
+          "mean": 0,
+          "p95": 0.0,
+          "p99": 0.0
+        },
+        "kv_cache_usage_pct": {
+          "min": 0.0,
+          "max": 68.2,
+          "mean": 36.88043052837573,
+          "p95": 57.2,
+          "p99": 65.3
+        },
+        "prefix_cache_hit_rate": {
+          "min": 3.7,
+          "max": 36.2,
+          "mean": 11.02211350293542,
+          "p95": 26.0,
+          "p99": 36.0
+        },
+        "num_samples": 511,
+        "num_seeds": 3
+      }
+    },
+    {
+      "task_name": "mmlu_pro_chat",
+      "model_name": "Qwen/Qwen3-8B",
+      "harness": "lm_eval[api,ifeval,multilingual] @ git+https://github.com/neuralmagic/lm-evaluation-harness.git@main",
+      "harness_version": "0.4.13.dev0",
+      "inference_parameters": {
+        "do_sample": true,
+        "temperature": 0.8,
+        "top_p": 0.95,
+        "top_k": 50,
+        "max_gen_toks": 8192,
+        "seed": 1235,
+        "concurrency": 128,
+        "limit": null
+      },
+      "num_repetitions": 3,
+      "aggregate_stats": {
+        "evaluation_duration_seconds": {
+          "mean": 4895.551040989968,
+          "std": 23.363492574088742
+        },
+        "metrics": {
+          "exact_match,custom-extract": {
+            "value": {
+              "mean": 0.7247617464539007,
+              "std": 0.003575091512797048
+            },
+            "stderr": {
+              "mean": null,
+              "std": 0.0
+            }
+          }
+        }
+      },
+      "runs": [
+        {
+          "source_filename": "mmlu_pro_chat_seed_1235.json",
+          "evaluation_datetime": 1783370280.7816894,
+          "evaluation_datetime_iso": "2026-07-06T20:38:00.781689+00:00",
+          "evaluation_duration_seconds": 4897.586214305018,
+          "metrics": {
+            "exact_match,custom-extract": {
+              "value": 0.7272273936170213,
+              "stderr": null
+            }
+          },
+          "proxy_statistics": {
+            "prompt_tokens": {
+              "min": 1032,
+              "max": 3028,
+              "mean": 1542.1245844414893,
+              "p95": 2056.0,
+              "p99": 2470.6900000000005
+            },
+            "completion_tokens": {
+              "min": 221,
+              "max": 8192,
+              "mean": 2042.2086934840424,
+              "p95": 7778.150000000005,
+              "p99": 8192.0
+            },
+            "total_tokens": {
+              "min": 1267,
+              "max": 11100,
+              "mean": 3584.333277925532,
+              "p95": 9402.900000000001,
+              "p99": 10104.140000000003
+            },
+            "latency_seconds": {
+              "min": 3.8595967292785645,
+              "max": 331.3105671405792,
+              "mean": 51.6557907861598,
+              "p95": 204.84894092082982,
+              "p99": 261.8639430475236
+            },
+            "finish_reason_counts": {
+              "stop": 11505,
+              "length": 527
+            },
+            "total_requests": 12032
+          },
+          "vllm_metrics": {
+            "queue_time_sum_seconds": 8412.491866991797,
+            "queue_time_count": 12032.0,
+            "queue_time_avg_seconds": 0.699176518200781,
+            "preemptions_total": 2180.0,
+            "prompt_tokens_total": 18554843.0,
+            "generation_tokens_total": 24571855.0,
+            "total_tokens": 43126698.0,
+            "duration_seconds": 4899.395153999329
+          },
+          "log_statistics": {
+            "prompt_throughput": {
+              "min": 0.0,
+              "max": 2996.3,
+              "mean": 558.1427402862986,
+              "p95": 1372.3400000000004,
+              "p99": 1798.5000000000002
+            },
+            "generation_throughput": {
+              "min": 0.0,
+              "max": 8190.7,
+              "mean": 5024.415950920245,
+              "p95": 6865.820000000001,
+              "p99": 7710.196000000001
+            },
+            "running_reqs": {
+              "min": 0,
+              "max": 128,
+              "mean": 122.32310838445808,
+              "p95": 128.0,
+              "p99": 128.0
+            },
+            "waiting_reqs": {
+              "min": 0,
+              "max": 67,
+              "mean": 4.683026584867076,
+              "p95": 44.60000000000002,
+              "p99": 63.24000000000001
+            },
+            "kv_cache_usage_pct": {
+              "min": 0.0,
+              "max": 100.0,
+              "mean": 73.22658486707566,
+              "p95": 99.9,
+              "p99": 100.0
+            },
+            "prefix_cache_hit_rate": {
+              "min": 4.9,
+              "max": 90.8,
+              "mean": 83.77934560327198,
+              "p95": 90.16,
+              "p99": 90.8
+            },
+            "num_samples": 489
+          }
+        },
+        {
+          "source_filename": "mmlu_pro_chat_seed_1236.json",
+          "evaluation_datetime": 1783375180.8134491,
+          "evaluation_datetime_iso": "2026-07-06T21:59:40.813449+00:00",
+          "evaluation_duration_seconds": 4871.236537423916,
+          "metrics": {
+            "exact_match,custom-extract": {
+              "value": 0.7263962765957447,
+              "stderr": null
+            }
+          },
+          "proxy_statistics": {
+            "prompt_tokens": {
+              "min": 1032,
+              "max": 3028,
+              "mean": 1542.1245844414893,
+              "p95": 2056.0,
+              "p99": 2470.6900000000005
+            },
+            "completion_tokens": {
+              "min": 193,
+              "max": 8192,
+              "mean": 2033.650432180851,
+              "p95": 7778.450000000001,
+              "p99": 8192.0
+            },
+            "total_tokens": {
+              "min": 1271,
+              "max": 11100,
+              "mean": 3575.7750166223404,
+              "p95": 9424.050000000007,
+              "p99": 10095.380000000001
+            },
+            "latency_seconds": {
+              "min": 3.540936231613159,
+              "max": 336.8883123397827,
+              "mean": 51.35679924119502,
+              "p95": 204.48006466627135,
+              "p99": 257.16400524139436
+            },
+            "finish_reason_counts": {
+              "stop": 11505,
+              "length": 527
+            },
+            "total_requests": 12032
+          },
+          "vllm_metrics": {
+            "queue_time_sum_seconds": 9379.555159183918,
+            "queue_time_count": 12032.0,
+            "queue_time_avg_seconds": 0.7795507944800464,
+            "preemptions_total": 2074.0,
+            "prompt_tokens_total": 18554843.0,
+            "generation_tokens_total": 24468882.0,
+            "total_tokens": 43023725.0,
+            "duration_seconds": 4873.025394201279
+          },
+          "log_statistics": {
+            "prompt_throughput": {
+              "min": 0.0,
+              "max": 3062.3,
+              "mean": 560.3433264887063,
+              "p95": 1440.71,
+              "p99": 1689.02
+            },
+            "generation_throughput": {
+              "min": 0.0,
+              "max": 8117.2,
+              "mean": 5023.87659137577,
+              "p95": 6841.32,
+              "p99": 7743.9039999999995
+            },
+            "running_reqs": {
+              "min": 0,
+              "max": 128,
+              "mean": 121.61806981519507,
+              "p95": 128.0,
+              "p99": 128.0
+            },
+            "waiting_reqs": {
+              "min": 0,
+              "max": 69,
+              "mean": 4.9486652977412735,
+              "p95": 46.69999999999999,
+              "p99": 58.559999999999945
+            },
+            "kv_cache_usage_pct": {
+              "min": 0.0,
+              "max": 100.0,
+              "mean": 72.64004106776181,
+              "p95": 99.9,
+              "p99": 100.0
+            },
+            "prefix_cache_hit_rate": {
+              "min": 78.2,
+              "max": 90.8,
+              "mean": 84.54435318275154,
+              "p95": 90.2,
+              "p99": 90.8
+            },
+            "num_samples": 487
+          }
+        },
+        {
+          "source_filename": "mmlu_pro_chat_seed_1237.json",
+          "evaluation_datetime": 1783380054.5529668,
+          "evaluation_datetime_iso": "2026-07-06T23:20:54.552967+00:00",
+          "evaluation_duration_seconds": 4917.830371240969,
+          "metrics": {
+            "exact_match,custom-extract": {
+              "value": 0.7206615691489362,
+              "stderr": null
+            }
+          },
+          "proxy_statistics": {
+            "prompt_tokens": {
+              "min": 1032,
+              "max": 3028,
+              "mean": 1542.1245844414893,
+              "p95": 2056.0,
+              "p99": 2470.6900000000005
+            },
+            "completion_tokens": {
+              "min": 192,
+              "max": 8192,
+              "mean": 2041.4375,
+              "p95": 8015.800000000003,
+              "p99": 8192.0
+            },
+            "total_tokens": {
+              "min": 1271,
+              "max": 11100,
+              "mean": 3583.5620844414893,
+              "p95": 9544.45,
+              "p99": 10112.0
+            },
+            "latency_seconds": {
+              "min": 3.190073251724243,
+              "max": 338.76853799819946,
+              "mean": 51.85564749876156,
+              "p95": 207.88377861976625,
+              "p99": 262.877983222008
+            },
+            "finish_reason_counts": {
+              "stop": 11461,
+              "length": 571
+            },
+            "total_requests": 12032
+          },
+          "vllm_metrics": {
+            "queue_time_sum_seconds": 12131.751529188245,
+            "queue_time_count": 12032.0,
+            "queue_time_avg_seconds": 1.008290519380672,
+            "preemptions_total": 1296.0,
+            "prompt_tokens_total": 18554843.0,
+            "generation_tokens_total": 24562576.0,
+            "total_tokens": 43117419.0,
+            "duration_seconds": 4919.671987056732
+          },
+          "log_statistics": {
+            "prompt_throughput": {
+              "min": 0.0,
+              "max": 2996.1,
+              "mean": 554.739430894309,
+              "p95": 1409.1,
+              "p99": 1770.4049999999982
+            },
+            "generation_throughput": {
+              "min": 0.0,
+              "max": 8054.0,
+              "mean": 4991.84512195122,
+              "p95": 6917.9349999999995,
+              "p99": 7692.179999999998
+            },
+            "running_reqs": {
+              "min": 0,
+              "max": 128,
+              "mean": 120.98373983739837,
+              "p95": 128.0,
+              "p99": 128.0
+            },
+            "waiting_reqs": {
+              "min": 0,
+              "max": 73,
+              "mean": 5.705284552845528,
+              "p95": 55.799999999999955,
+              "p99": 67.0
+            },
+            "kv_cache_usage_pct": {
+              "min": 0.0,
+              "max": 100.0,
+              "mean": 72.9829268292683,
+              "p95": 99.9,
+              "p99": 100.0
+            },
+            "prefix_cache_hit_rate": {
+              "min": 79.0,
+              "max": 90.8,
+              "mean": 84.64776422764227,
+              "p95": 90.1,
+              "p99": 90.8
+            },
+            "num_samples": 492
+          }
+        }
+      ],
+      "proxy_statistics_aggregate": {
+        "prompt_tokens": {
+          "min": 1032,
+          "max": 3028,
+          "mean": 1542.1245844414893,
+          "p95": 2056.0,
+          "p99": 2471.0
+        },
+        "completion_tokens": {
+          "min": 192,
+          "max": 8192,
+          "mean": 2039.0988752216313,
+          "p95": 7832.75,
+          "p99": 8192.0
+        },
+        "total_tokens": {
+          "min": 1267,
+          "max": 11100,
+          "mean": 3581.2234596631206,
+          "p95": 9446.25,
+          "p99": 10100.100000000006
+        },
+        "latency_seconds": {
+          "min": 3.190073251724243,
+          "max": 338.76853799819946,
+          "mean": 51.62274584203879,
+          "p95": 205.62259030342102,
+          "p99": 261.1755125045777
+        },
+        "finish_reason_counts": {
+          "stop": 34471,
+          "length": 1625
+        },
+        "total_requests": 36096,
+        "num_seeds": 3
+      },
+      "vllm_metrics_aggregate": {
+        "queue_time_sum_seconds": 29923.79855536396,
+        "queue_time_count": 36096.0,
+        "queue_time_avg_seconds": 0.8290059440204998,
+        "preemptions_total": 5550.0,
+        "prompt_tokens_total": 55664529.0,
+        "generation_tokens_total": 73603313.0,
+        "total_tokens": 129267842.0,
+        "duration_seconds": 14692.09253525734,
+        "num_seeds": 3
+      },
+      "log_statistics_aggregate": {
+        "prompt_throughput": {
+          "min": 0.0,
+          "max": 3062.3,
+          "mean": 557.7321525885559,
+          "p95": 1410.395,
+          "p99": 1769.5079999999987
+        },
+        "generation_throughput": {
+          "min": 0.0,
+          "max": 8190.7,
+          "mean": 5013.320912806539,
+          "p95": 6858.885,
+          "p99": 7745.538
+        },
+        "running_reqs": {
+          "min": 0,
+          "max": 128,
+          "mean": 121.64032697547684,
+          "p95": 128.0,
+          "p99": 128.0
+        },
+        "waiting_reqs": {
+          "min": 0,
+          "max": 73,
+          "mean": 5.113760217983652,
+          "p95": 48.0,
+          "p99": 65.0
+        },
+        "kv_cache_usage_pct": {
+          "min": 0.0,
+          "max": 100.0,
+          "mean": 72.95034059945505,
+          "p95": 99.9,
+          "p99": 100.0
+        },
+        "prefix_cache_hit_rate": {
+          "min": 4.9,
+          "max": 90.8,
+          "mean": 84.32418256130791,
+          "p95": 90.2,
+          "p99": 90.8
+        },
+        "num_samples": 1468,
+        "num_seeds": 3
+      }
+    }
+  ],
+  "metadata": {
+    "parser_version": "1.0",
+    "parse_datetime": "2026-07-07T01:20:48.505277+00:00",
+    "session_id": "070620261450",
+    "model_id": "Qwen/Qwen3-8B",
+    "total_results_parsed": 15,
+    "total_files_parsed": 15,
+    "unique_tasks": [
+      "gsm8k_platinum_cot_llama",
+      "ifeval",
+      "math_500|0",
+      "mmlu_cot_llama",
+      "mmlu_pro_chat"
+    ],
+    "unique_models": [
+      "Qwen/Qwen3-8B",
+      "hosted_vllm/Qwen/Qwen3-8B"
+    ],
+    "proxy_logs_parsed": true,
+    "vllm_metrics_parsed": true,
+    "log_statistics_parsed": true
+  }
+}
