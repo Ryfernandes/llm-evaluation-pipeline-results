@@ -1,0 +1,90 @@
+{
+  "harnesses": [
+    {
+      "details": {
+        "url": "https://github.com/neuralmagic/lm-evaluation-harness.git",
+        "vcs_info": {
+          "commit_id": "8b53139124c8acc1935820df952cb047c360ba22",
+          "requested_revision": "main",
+          "vcs": "git"
+        }
+      },
+      "name": "lm_eval @ git+https://github.com/neuralmagic/lm-evaluation-harness.git@8b53139124c8acc1935820df952cb047c360ba22",
+      "version": "0.4.13.dev0"
+    },
+    {
+      "details": {
+        "url": "https://github.com/neuralmagic/lighteval.git",
+        "vcs_info": {
+          "commit_id": "6f0f351abfd7c06004bf0dcdaeab14c8f289b86c",
+          "requested_revision": "eldar-fix-litellm",
+          "vcs": "git"
+        }
+      },
+      "name": "lighteval @ git+https://github.com/neuralmagic/lighteval.git@6f0f351abfd7c06004bf0dcdaeab14c8f289b86c",
+      "version": "0.13.1.dev0"
+    },
+    "throughput"
+  ],
+  "tasks": [
+    {
+      "concurrency": 16,
+      "harness": "lm_eval",
+      "limit": 100,
+      "max_gen_tokens": 1024,
+      "metrics": [
+        {
+          "mean": 0.79,
+          "name": "exact_match,strict-match",
+          "stdev": 0
+        }
+      ],
+      "repetitions": 1,
+      "server_info": {
+        "preemptions_total": {
+          "mean": 0,
+          "stdev": 0
+        },
+        "queue_seconds_per_request": {
+          "mean": 0.0980148863652721,
+          "stdev": 0
+        },
+        "total_time_seconds": {
+          "mean": 17.48323631286621,
+          "stdev": 0
+        }
+      },
+      "shots": 5,
+      "task": "gsm8k",
+      "timeout": 3600
+    },
+    {
+      "dataset": "{\"prompt_tokens\":256,\"output_tokens\":128}",
+      "guidellm_version": "0.6.0",
+      "harness": "throughput",
+      "max_requests": 100,
+      "num_repetitions": 1,
+      "reps": [
+        {
+          "duration_seconds": 6.559267520904541,
+          "rep": 1
+        }
+      ],
+      "task": "throughput-sonnet"
+    }
+  ],
+  "vllm_server": {
+    "dp": 1,
+    "max_model_length": 4096,
+    "model_id": "Qwen/Qwen3-8B",
+    "model_snapshot_size_gib": 15.271298301406205,
+    "node_selector": "node-role.kubernetes.io/up-h100mcp",
+    "sampling": {
+      "reasoning_parser": "",
+      "temperature": 0,
+      "top_k": 1,
+      "top_p": 1
+    },
+    "tp": 1
+  }
+}
