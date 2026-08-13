@@ -1,0 +1,32 @@
+{
+  "acceptance": [
+    {
+      "acceptance_at_pos_0": 0.7243243243243244,
+      "acceptance_at_pos_1": 0.4261261261261261,
+      "acceptance_at_pos_2": 0.23873873873873874,
+      "acceptance_at_pos_3": 0.12162162162162163,
+      "acceptance_at_pos_4": 0.05405405405405406,
+      "acceptance_length": 2.564864864864865,
+      "num_accepted_tokens": 1737,
+      "num_draft_tokens": 5550,
+      "num_drafts": 1110,
+      "subset": "HumanEval"
+    }
+  ],
+  "metadata": {
+    "eval_duration_seconds": 18.987202644348145,
+    "eval_mode": "throughput",
+    "model_id": "Qwen/Qwen3-30B-A3B",
+    "num_speculative_tokens": 5,
+    "speculative_model": "/local-models/sessions/08082026-7bf1/Qwen3-30B-A3B-speculator.dflash/checkpoint_best",
+    "speculators_version": "v0.7.0.1"
+  },
+  "performance": [],
+  "vllm_server": {
+    "gpu_memory_utilization": 0.9,
+    "model_id": "Qwen/Qwen3-30B-A3B",
+    "model_snapshot_size_gib": 56.889054998755455,
+    "node_selector": "node-role.kubernetes.io/up-h100mcp",
+    "tp": 1
+  }
+}
