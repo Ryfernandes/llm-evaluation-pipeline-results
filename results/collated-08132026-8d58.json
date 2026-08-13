@@ -1,0 +1,128 @@
+{
+  "acceptance": [
+    {
+      "acceptance_at_pos_0": 0.7432847896440129,
+      "acceptance_at_pos_1": 0.455663430420712,
+      "acceptance_at_pos_2": 0.23632686084142396,
+      "acceptance_at_pos_3": 0.11177184466019417,
+      "acceptance_at_pos_4": 0.05088996763754045,
+      "acceptance_length": 2.5979368932038835,
+      "num_accepted_tokens": 39501,
+      "num_draft_tokens": 123600,
+      "num_drafts": 24720,
+      "subset": "HumanEval"
+    },
+    {
+      "acceptance_at_pos_0": 0.8081081081081081,
+      "acceptance_at_pos_1": 0.5543918918918919,
+      "acceptance_at_pos_2": 0.34510135135135134,
+      "acceptance_at_pos_3": 0.19983108108108108,
+      "acceptance_at_pos_4": 0.10844594594594595,
+      "acceptance_length": 3.0158783783783782,
+      "num_accepted_tokens": 11934,
+      "num_draft_tokens": 29600,
+      "num_drafts": 5920,
+      "subset": "math_reasoning"
+    },
+    {
+      "acceptance_at_pos_0": 0.5690494011976048,
+      "acceptance_at_pos_1": 0.26075973053892215,
+      "acceptance_at_pos_2": 0.10282559880239521,
+      "acceptance_at_pos_3": 0.03546032934131736,
+      "acceptance_at_pos_4": 0.01188248502994012,
+      "acceptance_length": 1.9799775449101795,
+      "num_accepted_tokens": 10474,
+      "num_draft_tokens": 53440,
+      "num_drafts": 10688,
+      "subset": "qa"
+    },
+    {
+      "acceptance_at_pos_0": 0.6678748825345684,
+      "acceptance_at_pos_1": 0.3637400993421936,
+      "acceptance_at_pos_2": 0.16948583702510403,
+      "acceptance_at_pos_3": 0.0753792455363136,
+      "acceptance_at_pos_4": 0.031346489461672705,
+      "acceptance_length": 2.3078265538998526,
+      "num_accepted_tokens": 19484,
+      "num_draft_tokens": 74490,
+      "num_drafts": 14898,
+      "subset": "question"
+    },
+    {
+      "acceptance_at_pos_0": 0.6089302112029384,
+      "acceptance_at_pos_1": 0.28558310376492196,
+      "acceptance_at_pos_2": 0.11352157943067034,
+      "acceptance_at_pos_3": 0.037993572084481175,
+      "acceptance_at_pos_4": 0.01182277318640955,
+      "acceptance_length": 2.0578512396694215,
+      "num_accepted_tokens": 9216,
+      "num_draft_tokens": 43560,
+      "num_drafts": 8712,
+      "subset": "rag"
+    },
+    {
+      "acceptance_at_pos_0": 0.5098814229249012,
+      "acceptance_at_pos_1": 0.18102766798418973,
+      "acceptance_at_pos_2": 0.05172219085262564,
+      "acceptance_at_pos_3": 0.014342179559570864,
+      "acceptance_at_pos_4": 0.0041784302653867875,
+      "acceptance_length": 1.7611518915866742,
+      "num_accepted_tokens": 6740,
+      "num_draft_tokens": 44275,
+      "num_drafts": 8855,
+      "subset": "summarization"
+    },
+    {
+      "acceptance_at_pos_0": 0.637348804115812,
+      "acceptance_at_pos_1": 0.3271304252640797,
+      "acceptance_at_pos_2": 0.1494718406217503,
+      "acceptance_at_pos_3": 0.06337912538996224,
+      "acceptance_at_pos_4": 0.023425099885063763,
+      "acceptance_length": 2.200755295276668,
+      "num_accepted_tokens": 21939,
+      "num_draft_tokens": 91355,
+      "num_drafts": 18271,
+      "subset": "tool_call"
+    },
+    {
+      "acceptance_at_pos_0": 0.6087360594795539,
+      "acceptance_at_pos_1": 0.26765799256505574,
+      "acceptance_at_pos_2": 0.09665427509293681,
+      "acceptance_at_pos_3": 0.027881040892193308,
+      "acceptance_at_pos_4": 0.0027881040892193307,
+      "acceptance_length": 2.003717472118959,
+      "num_accepted_tokens": 1080,
+      "num_draft_tokens": 5380,
+      "num_drafts": 1076,
+      "subset": "translation"
+    },
+    {
+      "acceptance_at_pos_0": 0.6713161430673747,
+      "acceptance_at_pos_1": 0.3604837161686608,
+      "acceptance_at_pos_2": 0.1674451340456843,
+      "acceptance_at_pos_3": 0.07319726150105572,
+      "acceptance_at_pos_4": 0.031032055793716807,
+      "acceptance_length": 2.303474310576492,
+      "num_accepted_tokens": 20372,
+      "num_draft_tokens": 78145,
+      "num_drafts": 15629,
+      "subset": "writing"
+    }
+  ],
+  "metadata": {
+    "eval_duration_seconds": 140.9881956577301,
+    "eval_mode": "throughput",
+    "model_id": "Qwen/Qwen3-30B-A3B",
+    "num_speculative_tokens": 5,
+    "speculative_model": "/local-models/sessions/08082026-7bf1/Qwen3-30B-A3B-speculator.dflash/checkpoint_best",
+    "speculators_version": "v0.7.0.1"
+  },
+  "performance": [],
+  "vllm_server": {
+    "gpu_memory_utilization": 0.9,
+    "model_id": "Qwen/Qwen3-30B-A3B",
+    "model_snapshot_size_gib": 56.889054998755455,
+    "node_selector": "node-role.kubernetes.io/up-h100mcp",
+    "tp": 1
+  }
+}
